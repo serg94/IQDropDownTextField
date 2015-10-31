@@ -327,10 +327,20 @@
     [self.datePicker setLocale:self.dropDownDateFormatter.locale];
 }
 
+- (NSDateFormatter *)getDateFormatter
+{
+    return self.dropDownDateFormatter;
+}
+
 - (void)setTimeFormatter:(NSDateFormatter *)userTimeFormatter
 {
     self.dropDownTimeFormatter = userTimeFormatter;
     [self.timePicker setLocale:self.dropDownTimeFormatter.locale];
+}
+
+- (NSDateFormatter *)getTimeFormatter
+{
+    return self.dropDownTimeFormatter;
 }
 
 -(void)setSelectedItem:(NSString *)selectedItem

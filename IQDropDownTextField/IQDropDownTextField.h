@@ -211,6 +211,15 @@ typedef NS_ENUM(NSInteger, IQDropDownMode) {
  */
 @property (nonatomic, retain) NSDateFormatter *dateFormatter UI_APPEARANCE_SELECTOR;
 
+/**
+ returns datePicker dateFormatter referense. not safe :))
+ */
+- (NSDateFormatter *)getDateFormatter;
+
+/**
+ returns timePicker timeFormatter referense. not safe :))
+ */
+- (NSDateFormatter *)getTimeFormatter;
 
 ///-------------------------------
 /// @name IQDropDownModeTimePicker
